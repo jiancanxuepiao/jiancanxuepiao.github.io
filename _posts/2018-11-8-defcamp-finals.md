@@ -2,7 +2,6 @@
 layout: post
 title:  "2018-11-8-defcamp-finals-authenticator Writeup"
 categories: ctf
-date:   2018-12-18 21:19:18 +0800
 tags:  ctf pwn
 author: p4-team
 ---

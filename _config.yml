@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 剑残雪飘的专栏
+title: Jcxp's blog
 brief-intro: love and peace
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jiancanxuepiao.github.io" # the base hostname & protocol for your site
@@ -23,7 +23,7 @@ weibo_username: jiancanxuepiao
 #linkedIn_username: gaohaoyang
 dribbble_username:
 
-description_footer: 来自剑残雪飘的个人专栏！
+description_footer: Jcxp's blog！
 
 # comments
 # two ways to comment, only choose one, and use your own short name

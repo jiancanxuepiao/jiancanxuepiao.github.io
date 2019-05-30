@@ -185,7 +185,7 @@ whoami /priv
 netsh advfirewall firewall add rule name="135" protocol=TCP dir=in localport=135 action=allow
 ```
 
-也可以选择将防火墙关闭，可参考绕过3gstudent写的UAC关闭防火墙的代码：
+也可以选择将防火墙关闭，可参考绕过3gstudent写的UAC关闭防火墙的代码：  
 
 ```cpp
 //Author: 3gstudent

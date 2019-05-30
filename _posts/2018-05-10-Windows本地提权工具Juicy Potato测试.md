@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows本地提权工具Juicy Potato测试分析
-tags:  内网 渗透 
+tags:  内网 渗透 提权 
 author: jcxp
 ---
 

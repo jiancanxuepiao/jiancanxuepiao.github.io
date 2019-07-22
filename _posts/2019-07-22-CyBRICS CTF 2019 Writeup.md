@@ -1,9 +1,9 @@
 ### QShell
 > Description: QShell is running on nc spbctf.ppctf.net 37338
 
-A QR code is given by the server. I love QR codes.
-
-The decoded value is sh-5.0$, which means the server just gives us the shell in QR code. I made a simple client which decodes the give QR code and encodes our command in QR code.
+服务端返回一个二维码 解码为`sh-5.0$`  
+![](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2019-7-22/1.png)
+这道题的意思是服务器返回一个二维码shell,我们通过对服务器器的二维码解码,然后对命令进行二维码加密发送,获得一个shell
 ```python
 from PIL import Image
 from pyzbar.pyzbar import decode

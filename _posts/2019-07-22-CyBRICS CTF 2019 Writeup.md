@@ -1,8 +1,11 @@
 ### QShell
 > Description: QShell is running on nc spbctf.ppctf.net 37338
 
-服务端返回一个二维码 解码为`sh-5.0$`  
+服务端返回一个二维码  
 ![](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2019-7-22/1.png)
+
+解码为`sh-5.0$`  
+![](https://raw.githubusercontent.com/jiancanxuepiao/Pic/master/2019-7-22/2.png)
 
 这道题的意思是服务器返回一个二维码shell,我们通过对服务器器的二维码解码,然后对命令进行二维码加密发送,获得一个shell
 ```python

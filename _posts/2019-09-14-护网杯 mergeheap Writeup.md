@@ -7,7 +7,7 @@ author: jcxp
 ---
 
 ## 前言
-这道题考察的是堆溢出在`libc2.27`以上的利用方式,在高版本的`libc`中引入了`tcache`机制
+这道题考察的是堆溢出在高版本的`libc`的利用方式,在高版本的`libc`中引入了`tcache`机制
 >  tcache是libc2.26之后引进的一种新机制，类似于fastbin一样的东西，每条链上最多可以有 7 个 chunk，free的时候当tcache满了才放入fastbin，unsorted bin，malloc的时候优先去tcache找到对应大小的chunk.
 
 ## 漏洞分析

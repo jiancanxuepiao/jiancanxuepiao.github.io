@@ -40,9 +40,9 @@ int dele()
   return result;
 }
 ```
-- 如果我们对`ptr[9]`分配一个`0x358`的内存的话,在`zhixing`函数时,会调用`ptr[idx+85*4]`地址的函数:  
+- 如果我们对`ptr[9]`分配一个`0x358`的内存的话,在`zhixing`函数时,会调用`ptr[idx+85*4]`地址的函数:    
 
-```x86asm 
+```c
 .text:08048944 ; __unwind {
 .text:08048944                 push    ebp
 .text:08048945                 mov     ebp, esp
